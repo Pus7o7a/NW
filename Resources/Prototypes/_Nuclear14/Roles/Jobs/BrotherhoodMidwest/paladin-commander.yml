@@ -1,0 +1,35 @@
+- type: job
+  id: BoSMidPaladinCommander
+  setPreference: true
+  name: job-name-bos-mid-paladin-comm
+  description: job-description-bos-mid-paladin-comm
+  playTimeTracker: BoSMidPaladinCommander
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: BrotherhoodMidwest
+      time: 36000 # 10 hours
+  startingGear: BoSMidPaladinCommanderGear
+  icon: "JobIconPassenger"
+  canBeAntag: false
+  accessGroups:
+  - BOSMidwest
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - BrotherhoodMidwest
+
+- type: startingGear
+  id: BoSMidPaladinCommanderGear
+  equipment:
+    jumpsuit: N14ClothingUniformBosRecon
+    back: N14ClothingBackpackMilitary
+    shoes: N14ClothingBootsCombatFilled
+    hands: N14ClothingHandsGlovesCombat
+    id: N14IDBrotherhoodHolotagCommander
+    ears: N14ClothingHeadsetBOSMidwest
+    belt: ClothingBeltMilitary
+
+- type: playTimeTracker
+  id: BoSMidPaladinCommander
