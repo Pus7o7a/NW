@@ -1,0 +1,118 @@
+- type: entity
+  parent: MobHuman
+  id: N14MobHumanNCRCadet
+  name: NCRCadet
+  components:
+    - type: RandomHumanoidAppearance
+      randomizeName: true
+    - type: Loadout
+      prototypes: [NCRCadetGear]
+    - type: NpcFactionMember
+      factions:
+      - NCR
+
+- type: entity
+  parent: MobHuman
+  id: N14MobHumanNCRMedic
+  name: NCRMedic
+  components:
+    - type: RandomHumanoidAppearance
+      randomizeName: true
+    - type: Loadout
+      prototypes: [NCRMedicGear]
+    - type: NpcFactionMember
+      factions:
+      - NCR
+
+- type: entity
+  parent: MobHuman
+  id: N14MobHumanNCRSGT
+  name: NCRSGT
+  components:
+    - type: RandomHumanoidAppearance
+      randomizeName: true
+    - type: Loadout
+      prototypes: [NCRSGTGear]
+    - type: NpcFactionMember
+      factions:
+      - NCR
+
+- type: entity
+  parent: MobHuman
+  id: N14MobHumanNCRLT
+  name: NCRLT
+  components:
+    - type: RandomHumanoidAppearance
+      randomizeName: true
+    - type: Loadout
+      prototypes: [NCRLTGear]
+    - type: NpcFactionMember
+      factions:
+      - NCR
+
+- type: entity
+  parent: MobHuman
+  id: N14MobHumanNCREngineer
+  name: NCREngineer
+  components:
+    - type: RandomHumanoidAppearance
+      randomizeName: true
+    - type: Loadout
+      prototypes: [NCREngineerGear]
+    - type: NpcFactionMember
+      factions:
+      - NCR
+
+- type: entity
+  parent: MobHuman
+  id: N14MobHumanNCRWS
+  name: NCRWS
+  components:
+    - type: RandomHumanoidAppearance
+      randomizeName: true
+    - type: Loadout
+      prototypes: [NCRWSGear]
+    - type: NpcFactionMember
+      factions:
+      - NCR
+
+- type: entity
+  parent: MobHuman
+  id: N14MobHumanNCRSoldier
+  name: NCRSoldier
+  components:
+    - type: RandomHumanoidAppearance
+      randomizeName: true
+    - type: Loadout
+      prototypes: [NCRSoldierGear]
+    - type: NpcFactionMember
+      factions:
+      - NCR
+
+- type: entity
+  parent: MobHuman
+  id: N14MobHumanNCRRangerVeteran
+  name: NCRRangerVeteran
+  components:
+    - type: RandomHumanoidAppearance
+      randomizeName: true
+    - type: Loadout
+      prototypes: [NCRRangerVeteranGear]
+    - type: NpcFactionMember
+      factions:
+      - NCR
+
+- type: entity
+  parent: MobHuman
+  id: N14MobHumanNCRRanger
+  name: NCRRanger
+  components:
+    - type: RandomHumanoidAppearance
+      randomizeName: true
+    - type: Loadout
+      prototypes: [NCRRangerGear]
+    - type: NpcFactionMember
+      factions:
+      - NCR
+
+#TODO add pictures for the entitylist

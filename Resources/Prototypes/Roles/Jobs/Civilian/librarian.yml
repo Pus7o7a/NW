@@ -1,0 +1,40 @@
+- type: job
+  id: Librarian
+  name: job-name-librarian
+  description: job-description-librarian
+  playTimeTracker: JobLibrarian
+  requirements:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Epistemics
+      min: 14400
+    # - !type:CharacterLogicOrRequirement
+      # requirements:
+        # - !type:CharacterSpeciesRequirement
+          # inverted: true
+          # species:
+            # - IPC
+        # - !type:CharacterTraitRequirement
+          # traits:
+            # - AnomalousPositronics
+  startingGear: LibrarianGear
+  icon: "JobIconLibrarian"
+  supervisors: job-supervisors-hop
+  access:
+  - Service
+  - Maintenance
+  - Library # DeltaV - Add Library access
+  setPreference: false
+
+- type: startingGear
+  id: LibrarianGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitLibrarian
+    back: ClothingBackpackLibrarianFilled
+    shoes: ClothingShoesBootsLaceup
+    id: LibrarianPDA
+    ears: ClothingHeadsetScience
+    pocket1: d10Dice
+    pocket2: HandLabeler
+  innerClothingSkirt: ClothingUniformJumpskirtLibrarian
+  satchel: ClothingBackpackSatchelLibrarianFilled
+  duffelbag: ClothingBackpackDuffelLibrarianFilled
