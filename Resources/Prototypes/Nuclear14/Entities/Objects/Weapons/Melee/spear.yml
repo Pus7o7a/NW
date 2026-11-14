@@ -1,0 +1,26 @@
+- type: entity
+  name: spear
+  parent: Spear
+  id: N14WastelandSpear
+  description: Definition of a Classic. Keeping murder affordable since 200,000 BCE.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Melee/spear.rsi
+    netsync: false
+    state: spear
+
+
+- type: entity
+  name: NCR battle flag
+  parent: N14WastelandSpear
+  id: N14WastelandFlagSpear
+  description: A long spear with a NCR flag tied on his end, the most loyal soldiers carry these to boost the morale.
+  components:
+  - type: Tag
+    tags:
+    - Spear
+  - type: Sharp
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Melee/flagspear.rsi
+    netsync: false
+    state: spear
