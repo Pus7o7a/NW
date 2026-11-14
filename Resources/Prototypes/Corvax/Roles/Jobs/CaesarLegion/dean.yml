@@ -1,0 +1,49 @@
+- type: job
+  id: CaesarLegionDean
+  setPreference: true
+  name: job-name-caesar-legion-dean
+  description: job-description-caesar-legion-dean
+  playTimeTracker: CaesarLegionDean
+  requirements:
+  - !type:CharacterDepartmentTimeRequirement
+    department: CaesarLegion
+    min: 36000 #10 hours
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
+  - !type:CharacterSexRequirement
+    sex: Male
+  - !type:CharacterGenderRequirement
+    gender: Male
+  startingGear: CaesarLegionDeanGear
+  alwaysUseSpawner: true
+  icon: "JobIconLegioner"
+  supervisors: job-name-caesar-legion-supervisors
+  canBeAntag: false
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - CaesarLegion
+      - type: ReplacementAccent
+        accent: latin
+
+- type: startingGear
+  id: CaesarLegionDeanGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitLegionnaire
+    neck: ClothingNeckRedScarf
+    eyes: N14ClothingEyesGlassesWelding
+    back: N14ClothingBackpackMilitaryFilled
+    shoes: N14ClothingBootsBlack
+    head: N14ClothingHeadHatDeanHelmet
+    gloves: N14ClothingHandsGlovesTribal
+    belt: N14Gladius
+    pocket1: LegionDeanloadoutkits
+    pocket2: N14WeaponPistol10mmPipe
+    id: N14IDLegionaryMedalSilver3
+  innerClothingSkirt: N14ClothingUniformJumpsuitLegionnaireOther
+
+- type: playTimeTracker
+  id: CaesarLegionDean
