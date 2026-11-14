@@ -1,0 +1,396 @@
+# vocal emotes
+- type: emote
+  id: Scream
+  category: Vocal
+  chatMessages: ["chat-emote-msg-scream"]
+  chatTriggers:
+    - screams
+    - shrieks
+    - screeches
+    - yells
+    - yells.
+    - yells!
+    - yelled
+    - yelling
+    # Corvax-Localization-Start
+    - кричит
+    - кричит.
+    - кричит!
+    - орёт
+    - орёт.
+    - орёт!
+    - визжит
+    - визжит.
+    - визжит!
+    # Corvax-Localization-End
+
+- type: emote
+  id: Laugh
+  category: Vocal
+  chatMessages: ["chat-emote-msg-laugh"]
+  chatTriggers:
+    - laughs
+    - chuckles
+    - giggles
+    - chortles
+    - chortles.
+    - chortles!
+    - chortling
+    - chortling.
+    - chortling!
+    # Corvax-Localization-Start
+    - смеется
+    - смеется.
+    - смеется!
+    - смеётся
+    - смеётся.
+    - смеётся!
+    - хохочет
+    - хохочет.
+    - хохочет!
+    - хихикает
+    - хихикает.
+    - хихикает!
+    - хихикнул
+    - хихикнула
+    - ржёт
+    # Corvax-Localization-End
+
+- type: emote
+  id: Honk
+  category: Vocal
+  chatMessages: ["chat-emote-msg-honk"]
+  chatTriggers:
+    # Corvax-Localization-Start
+    - хонк
+    - хонк.
+    - хонк!
+    # Corvax-Localization-End
+
+- type: emote
+  id: Sigh
+  category: Vocal
+  chatMessages: ["chat-emote-msg-sigh"]
+  chatTriggers:
+    - sighs
+    - sighed
+    - sigh.
+    - sighs.
+    - sighed.
+    # Corvax-Localization-Start
+    - вздыхает
+    - вздыхает.
+    - вздохнул
+    - вздохнула
+    - вздохнул.
+    - вздохнула.
+    # Corvax-Localization-End
+
+- type: emote
+  id: Whistle
+  category: Vocal
+  chatMessages: ["chat-emote-msg-whistle"]
+  chatTriggers:
+    - whistles
+    - whistles.
+    - whistles!
+    - whistleblowing
+    - whistleblowing.
+    - whistleblowing!
+    # Corvax-Localization-Start
+    - свистит
+    - свистит.
+    - свистит!
+    - свистнул
+    - свистнул.
+    - свистнул!
+    # Corvax-Localization-End
+
+- type: emote
+  id: Crying
+  category: Vocal
+  chatMessages: ["chat-emote-msg-crying"]
+  chatTriggers:
+    - cries
+    - sobs
+    - sobs.
+    - sobs!
+    - sobbing
+    - sobbing.
+    - sobbing!
+    # Corvax-Localization-Start
+    - плачет
+    - плачет.
+    - плачет!
+    - рыдает
+    - рыдает.
+    - рыдает!
+    # Corvax-Localization-End
+
+- type: emote
+  id: Squish
+  category: Vocal
+  chatMessages: ["chat-emote-msg-squish"]
+  chatTriggers:
+    - squishes
+    - squishes.
+    - squishes!
+    # Corvax-Localization-Start
+    - хлюпает
+    - хлюпает.
+    - хлюпает!
+    # Corvax-Localization-End
+
+- type: emote
+  id: Chitter
+  category: Vocal
+  chatMessages: ["chat-emote-msg-chitter"]
+  chatTriggers:
+   - chitters
+   - chitters.
+   - chitters!
+   - chittered
+   - chittered.
+   - chittered!
+   # Corvax-Localization-Start
+   - стрекочет
+   - стрекочет.
+   - стрекочет!
+   # Corvax-Localization-End
+
+- type: emote
+  id: Squeak
+  category: Vocal
+  chatMessages: ["chat-emote-msg-squeak"]
+  chatTriggers:
+   - squeaks
+   - squeaks.
+   - squeaks!
+   - squeaked
+   - squeaked.
+   - squeaked!
+   # Corvax-Localization-Start
+   - пищит
+   - пищит.
+   - пищит!
+   # Corvax-Localization-End
+
+- type: emote
+  id: Click
+  category: Vocal
+  chatMessages: ["chat-emote-msg-click"]
+  chatTriggers:
+   - clicks
+   - clicks.
+   - clicks!
+   - clicks?
+   - clicked
+   - clicked.
+   - clicked!
+   - clicked?
+   - clicking
+   - clicking.
+   - clicking!
+   - clicking?
+   # Corvax-Localization-Start
+   - клац
+   - клац.
+   - клац!
+   - клацает
+   - клацает.
+   - клацает!
+   # Corvax-Localization-End
+
+# hand emotes
+- type: emote
+  id: Clap
+  category: Hands
+  chatMessages: ["chat-emote-msg-clap"]
+  chatTriggers:
+    - claps
+    - claps.
+    - claps!
+    - clapping
+    - clapped
+    # Corvax-Localization-Start
+    - хлопает
+    - хлопает.
+    - хлопает!
+    - хлопнул
+    - хлопнула
+    - хлопает в ладоши
+    - хлопает в ладоши.
+    - хлопает в ладоши!
+    - хлопнул в ладоши
+    - хлопнула в ладоши
+    - апплодирует
+    - апплодирует.
+    - апплодирует!
+    # Corvax-Localization-End
+
+- type: emote
+  id: Snap
+  category: Hands
+  chatMessages: ["chat-emote-msg-snap"] # snaps <{THEIR($ent)}> fingers?
+  chatTriggers:
+    - snaps
+    - snaps fingers
+    - snaps his fingers
+    - snaps her fingers
+    - snaps their fingers
+    - snaps its fingers
+    - snaps its' fingers
+    - snaps their fingers.
+    - snaps their fingers!
+    - snapping fingers
+    - snapped fingers
+    # Corvax-Localization-Start
+    - щелкает
+    - щелкает.
+    - щелкает!
+    - щелкнул
+    - щелкнула
+    - щёлкает
+    - щёлкает.
+    - щёлкает!
+    - щёлкнул
+    - щёлкнула
+    - щелкает пальцами
+    - щелкает пальцами.
+    - щелкает пальцами!
+    - щелкнул пальцами
+    - щелкнула пальцами
+    - щёлкает пальцами
+    - щёлкает пальцами.
+    - щёлкает пальцами!
+    - щёлкнул пальцами
+    - щёлкнула пальцами
+    # Corvax-Localization-End
+
+- type: emote
+  id: Salute
+  category: Hands
+  chatMessages: ["chat-emote-msg-salute"]
+  chatTriggers:
+    - salutes
+    - salutes.
+    - salutes!
+    # Corvax-Localization-Start
+    - салютует
+    - салютует.
+    - салютует!
+    - отдаёт честь
+    - отдаёт честь.
+    - отдаёт честь!
+    - отдал честь
+    - отдал честь.
+    - отдал честь!
+    - отдала честь
+    - отдала честь.
+    - отдала честь!
+    # Corvax-Localization-End
+
+- type: emote
+  id: DefaultDeathgasp
+  chatMessages: ["chat-emote-msg-deathgasp"]
+  chatTriggers:
+  - deathgasp
+  - задыхается
+  - задохнулся
+  - задохнулсь
+
+- type: emote
+  id: SiliconDeathgasp
+  chatMessages: ["chat-emote-msg-deathgasp-silicon"]
+  chatTriggers:
+  - sdeathgasp
+
+- type: emote
+  id: Buzz
+  category: Vocal
+  chatMessages: ["chat-emote-msg-buzz"]
+  chatTriggers:
+    - buzzes
+    - buzzes.
+    - buzzes!
+    # Corvax-Localization-Start
+    - жужжит!
+    - жужжит.
+    - жужжит
+    - зажужжал
+    - зажужжал.
+    - зажужжал!
+    - зажужжала
+    - зажужжала.
+    - зажужжала!
+    # Corvax-Localization-End
+
+- type: emote
+  id: Weh
+  category: Vocal
+  chatMessages: [издаёт вех!]
+
+- type: emote
+  id: Chirp
+  category: Vocal
+  chatMessages: ["chat-emote-msg-chirp"]
+  chatTriggers:
+    - chirps
+    - chirps.
+    - chirps!
+    - chirps?
+    - chirped
+    - chirped.
+    - chirped!
+    - chirped?
+    - chirping
+    - chirping.
+    - chirping!
+    - chirping?
+    # Corvax-Localization-Start
+    - чирикает
+    - чирикает.
+    - чирикает!
+    # Corvax-Localization-End
+
+# Machine Emotes
+- type: emote
+  id: Beep
+  category: Vocal
+  chatMessages: [ beeps ]
+  chatTriggers:
+    - beeps
+
+- type: emote
+  id: Boop
+  category: Vocal
+  chatMessages: [ boops ]
+  chatTriggers:
+    - boops
+
+- type: emote
+  id: Chime
+  category: Vocal
+  chatMessages: [ chimes ]
+  chatTriggers:
+    - chimes
+
+- type: emote
+  id: Buzz-Two
+  category: Vocal
+  chatMessages: [ "buzzes twice" ]
+  chatTriggers:
+    - buzzes twice
+
+- type: emote
+  id: Ping
+  category: Vocal
+  chatMessages: [ pings ]
+  chatTriggers:
+    - pings
+
+- type: emote
+  id: Whirr # uncategorized as it is generic
+  chatMessages: [ whirrs ]
+  chatTriggers:
+    - whirrs

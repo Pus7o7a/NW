@@ -1,0 +1,47 @@
+- type: job
+  id: CaesarLegionLegionnaireWarrior
+  setPreference: true
+  name: job-name-caesar-legion-legionnaire-warrior
+  description: job-description-caesar-legionnaire-warrior
+  playTimeTracker: CaesarLegionLegionnaireWarrior
+  requirements:
+  - !type:CharacterDepartmentTimeRequirement
+    department: CaesarLegion
+    min: 7200 # 2 hours
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
+  - !type:CharacterSexRequirement
+    sex: Male
+  - !type:CharacterGenderRequirement
+    gender: Male
+  startingGear: CaesarLegionLegionnaireWarriorGear
+  alwaysUseSpawner: true
+  icon: "JobIconLegioner"
+  supervisors: job-name-caesar-legion-other
+  canBeAntag: false
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - CaesarLegion
+      - type: ReplacementAccent
+        accent: latin
+
+- type: startingGear
+  id: CaesarLegionLegionnaireWarriorGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitLegionnaire
+    neck: ClothingNeckRedScarf
+    eyes: N14ClothingEyesGlassesWelding
+    back: N14ClothingBackpackMilitaryFilled
+    shoes: N14ClothingShoesKaligi
+    head: N14ClothingHeadHatLightBaseballHelmet
+    gloves: N14ClothingHandsGlovesTribal
+    pocket1: LegionWarriorloadoutkits
+    id: N14IDLegionaryMedalSilver
+  innerClothingSkirt: N14ClothingUniformJumpsuitLegionnaireOther
+
+- type: playTimeTracker
+  id: CaesarLegionLegionnaireWarrior
