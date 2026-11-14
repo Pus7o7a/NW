@@ -1,0 +1,53 @@
+- type: job
+  id: TribalElder
+  setPreference: true
+  name: job-name-tribal-elder
+  description: job-description-tribal-elder
+  playTimeTracker: TribalElder
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+      - Human
+      - Ghoul
+    - !type:CharacterDepartmentTimeRequirement
+      department: Tribe
+      min: 14400 # 4 hours
+  startingGear: TribalElderGear
+  alwaysUseSpawner: true
+  icon: "JobIconTribalLeader" # Corvax-Change
+  supervisors: job-supervisors-tribal-elder
+  access:
+  - TribeMember
+  - TribeChief
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Tribal
+  - !type:AddTraitSpecial
+    traits: [ LanguageTribal ]
+
+- type: startingGear
+  id: TribalElderGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitTribal
+    suitstorage: N14TribalBigClubDecorated
+    outerClothing: N14ClothingOuterTribalCoat
+    shoes: N14ClothingShoesTribal
+    gloves: N14ClothingHandsGlovesTribal
+    back: N14ClothingBackpackTrekker # Corvax-Change
+    pocket1: N14TribalKnife
+    id: N14IDTribeBossPendant
+  innerClothingSkirt: N14ClothingUniformJumpskirtTribal
+  satchel: N14ClothingBackpackSatchelTribalFilled
+  storage: # Corvax-Change
+    back:
+    - Torch
+    - Torch
+    - Torch
+    - N14Bandage
+    - Ointment
+
+- type: playTimeTracker
+  id: TribalElder

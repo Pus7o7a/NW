@@ -1,0 +1,29 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: N14ClothingHeadHatVenator
+  name: venator hood
+  description: The hood is made of bear skin.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Head/Hoods/vexillariushood.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Head/Hoods/vexillariushood.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: ClothingHeadBase
+  id: NCClothingHeadHatBoSReaconHood
+  name: bos hood
+  description: The hood of the Brotherhood Scout
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Head/Hoods/bosReaconHood.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Head/Hoods/bosReaconHood.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Hair

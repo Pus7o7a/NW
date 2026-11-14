@@ -1,0 +1,52 @@
+- type: job
+  id: TribalFarmer
+  setPreference: true
+  name: job-name-tribal-farmer
+  description: job-description-farmer
+  playTimeTracker: TribalFarmer
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+      - Human
+      - Ghoul
+    - !type:CharacterDepartmentTimeRequirement
+      department: Tribe
+      min: 7200 # 2 hours
+  startingGear: TribalFarmerGear
+  alwaysUseSpawner: true
+  icon: "JobIconTribalFarmer" # Corvax-Change
+  supervisors: job-supervisors-tribal
+  access:
+  - TribeMember
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Tribal
+  - !type:AddTraitSpecial
+    traits: [ LanguageTribal ]
+
+- type: startingGear
+  id: TribalFarmerGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitTribal
+    outerClothing: N14ClothingOuterTribalArmor
+    shoes: N14ClothingShoesTribal
+    gloves: N14ClothingHandsGlovesTribal
+    back: N14ClothingBackpackTrekker # Corvax-Change
+    belt: ClothingBeltPlantFilled # placeholder
+    pocket1: N14TribalKnife
+    id: N14IDTribeEnforcerPendant
+  innerClothingSkirt: N14ClothingUniformJumpskirtTribal
+  satchel: N14ClothingBackpackSatchelTribalFilled
+  storage: # Corvax-Change
+    back:
+    - Torch
+    - Torch
+    - Torch
+    - N14Bandage
+    - Ointment
+
+- type: playTimeTracker
+  id: TribalFarmer
