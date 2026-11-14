@@ -1,0 +1,52 @@
+- type: job
+  id: TownSheriff # Renamed to "Marshal", don't touch the prototype ID
+  setPreference: true
+  overrideConsoleVisibility: false
+  canBeAntag: false
+  name: job-name-townsheriff
+  description: job-description-townsheriff
+  playTimeTracker: TownSheriff
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+      - Human
+      - Ghoul
+    - !type:CharacterDepartmentTimeRequirement
+      department: Townsfolk
+      min: 28800 # 8 hours
+    - !type:CharacterPlaytimeRequirement # Corvax-Add
+      tracker: TownDeputy
+      min: 14400 # 4 hours
+  startingGear: TownSheriffGear
+  icon: "JobIconTownSheriff" # Corvax-Change
+  supervisors: job-supervisors-townsfolk
+  access:
+  - TownieLaw
+  - TownieMechanic
+  - TownieDoctor
+  - WastelandReporter
+  - TownsPerson # Corvax-Change
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - Townsfolk
+
+- type: startingGear
+  id: TownSheriffGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitTownGuardLight
+    back: N14ClothingBackpackSatchelMilitary
+    shoes: N14ClothingBootsLeatherFilled
+    id: N14IDBadgeTownSheriff
+    belt: ClothingBeltRevolverWildWhisper
+    pocket1: TownGuardKits
+    pocket2: Handcuffs
+  storage: # Forge-Change
+    back:
+    - N14BoxPlasticFilledWastelander
+
+- type: playTimeTracker
+  id: TownSheriff

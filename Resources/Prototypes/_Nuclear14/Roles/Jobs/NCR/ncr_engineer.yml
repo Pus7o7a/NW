@@ -1,0 +1,48 @@
+- type: job
+  id: NCREngineer
+  setPreference: true
+  overrideConsoleVisibility: false
+  canBeAntag: false
+  name: job-name-ncr-engineer
+  description: job-description-ncr-engineer
+  playTimeTracker: NCREngineer
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+      - Human
+      - Ghoul
+    - !type:CharacterDepartmentTimeRequirement
+      department: NCR
+      min: 18000 # 5 hours
+  startingGear: NCREngineerGear
+  icon: "JobIconWarden"
+  supervisors: job-supervisors-ncr
+  alwaysUseSpawner: true
+  access:
+  - NCR
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - NCR
+
+- type: startingGear
+  id: NCREngineerGear
+  equipment:
+    head: N14ClothingHeadHatNCRHelmetMetalDesert # Corvax-Change
+    back: N14ClothingBackpackNCR # Corvax-Change
+    jumpsuit: N14ClothingUniformNCRDesert # Corvax-Change
+    shoes: N14ClothingBootsLeatherFilled
+    gloves: N14ClothingHandsGlovesCombat
+    id: N14IDNCRDogtagEngineer
+    pocket1: NCRengineerloadoutkits
+  innerClothingSkirt: N14ClothingUniformNCRDesert # Corvax-Change
+  satchel: N14ClothingBackpackSatchelNCRFilled
+  storage: # Corvax-Change
+    back:
+    - N14BoxPlasticFilledMilitaryNCR
+
+- type: playTimeTracker
+  id: NCREngineer
