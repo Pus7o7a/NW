@@ -1,0 +1,41 @@
+- type: loadout
+  id: N14LoadoutHeadHatBaseball
+  category: Head
+  cost: 2
+  items:
+    - N14ClothingHeadHatBaseball
+    
+- type: loadout
+  id: N14LoadoutHeadHatTrucker
+  category: Head
+  cost: 2
+  items:
+    - N14ClothingHeadHatTrucker
+    
+- type: loadout
+  id: N14LoadoutHeadHatHeadscarf
+  category: Head
+  cost: 2
+  items:
+    - N14ClothingHeadHatHeadscarf
+    
+- type: loadout
+  id: N14LoadoutHeadHatBandit
+  category: Head
+  cost: 2
+  items:
+    - N14ClothingHeadHatBandit
+    
+- type: loadout
+  id: N14LoadoutHeadHatTribalOutcastHood
+  category: Head
+  cost: 2
+  items:
+    - N14ClothingHeadHatTribalOutcastHood
+
+- type: loadout
+  id: N14LoadoutHeadHatArmyCap
+  category: Head
+  cost: 2
+  items:
+    - N14ClothingHeadHatArmyCap
