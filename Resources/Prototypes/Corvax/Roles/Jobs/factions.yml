@@ -1,0 +1,18 @@
+- type: department
+  id: CaesarLegion
+  description: department-CaesarLegion-description
+  color: "#950202"
+  roles:
+  - CaesarLegionCenturion
+  - CaesarLegionVenator
+  - CaesarLegionDean
+  - CaesarLegionLegionnaireVeteran
+  - CaesarLegionLegionnaireWarrior
+  - CaesarLegionLegionnaireRecruit
+
+- type: department
+  id: Raider
+  description: department-Raider-description
+  color: "#093f09"
+  roles:
+  - Raider
