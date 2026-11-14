@@ -1,0 +1,51 @@
+- type: emote
+  id: Sneeze
+  category: Vocal
+  chatMessages: ["chat-emote-msg-sneeze"]
+
+- type: emote
+  id: Cough
+  category: Vocal
+  chatMessages: ["chat-emote-msg-cough"]
+  chatTriggers:
+    - coughs
+    # Corvax-Localization-Start
+    - кашель
+    - кашляет
+    # Corvax-Localization-End
+
+- type: emote
+  id: CatMeow
+  category: Vocal
+  chatMessages: ["chat-emote-msg-catmeow"]
+
+- type: emote
+  id: CatHisses
+  category: Vocal
+  chatMessages: ["chat-emote-msg-cathisses"]
+
+- type: emote
+  id: MonkeyScreeches
+  category: Vocal
+  chatMessages: ["chat-emote-msg-monkeyscreeches"]
+
+- type: emote
+  id: RobotBeep
+  category: Vocal
+  chatMessages: ["chat-emote-msg-beep"]
+
+- type: emote
+  id: Yawn
+  category: Vocal
+  chatMessages: ["chat-emote-msg-yawn"]
+  chatTriggers:
+    - yawns
+    # Corvax-Localization-Start
+    - зевок
+    - зевает
+    # Corvax-Localization-End
+
+- type: emote
+  id: Snore
+  category: Vocal
+  chatMessages: ["chat-emote-msg-snore"]
