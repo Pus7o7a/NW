@@ -1,0 +1,43 @@
+- type: job
+  id: VaultSecurity
+  name: job-name-vault-security
+  description: job-description-vault-security
+  playTimeTracker: VaultSecurity
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Vault
+      time: 7200 # 2 hours
+  startingGear: VaultSecurityGear
+  icon: "JobIconSecurityOfficer"
+  supervisors: job-supervisors-overseer
+  canBeAntag: false
+  access:
+  - VaultDweller
+  - VaultSecurity
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Vault
+  jobBlockForSpecies:
+  - !type:JobBlockForSpecie
+    nameSpecie: Ghoul
+  - !type:JobBlockForSpecie
+    nameSpecie: GhoulGlowing
+
+- type: startingGear
+  id: VaultSecurityGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitVault14
+    back: N14ClothingBackpackVaultSecurityFilled
+    shoes: N14ClothingBootsBlack
+    eyes: N14ClothingEyesSunGlasses
+    head: N14ClothingHeadHatVaultRiot
+    outerClothing: N14ClothingOuterVaultSecVest
+    pocket1: N14WeaponPistol10mm
+    ears: N14ClothingHeadsetVaultSecurity
+    belt: N14ClothingBeltPoliceFilled
+
+- type: playTimeTracker
+  id: VaultSecurity
