@@ -1,0 +1,53 @@
+- type: job
+  id: NCRSGT
+  setPreference: true
+  name: job-name-ncr-sgt
+  description: job-description-ncr-sgt
+  playTimeTracker: NCRNCO
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+      - Human
+      - Ghoul
+    - !type:CharacterDepartmentTimeRequirement
+      department: NCR
+      min: 72000 # 20 hours Corvax-Change
+    - !type:CharacterPlaytimeRequirement # Corvax-Add
+      tracker: NCRSoldier
+      min: 36000 # 10 hours
+  startingGear: NCRSGTGear
+  icon: "JobIconNcrSerg" # Corvax-Change
+  supervisors: job-supervisors-ncr-sgt
+  canBeAntag: false
+  alwaysUseSpawner: true
+  access:
+  - NCR
+  - NCRSGT
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - NCR
+
+- type: startingGear
+  id: NCRSGTGear
+  equipment:
+    back: N14ClothingBackpackNCR # Corvax-Change
+    gloves: N14ClothingHandsGlovesCombat
+    jumpsuit: N14ClothingOfficerUniformNCRDesert # Corvax-Change
+    shoes: N14ClothingBootsCombatFilled
+    neck: N14ClothingNeckMantleNCR
+    belt: ClothingBeltNCR
+    outerClothing: N14ClothingOuterNCRCombatArmor
+    pocket1: NCRSGTloadoutkits
+    pocket2: RadioHandheld
+    id: N14IDNCRDogtagNCO
+  innerClothingSkirt: N14ClothingOfficerUniformNCRDesert # Corvax-Change
+  satchel: N14ClothingBackpackSatchelNCRFilled
+  storage: # Corvax-Change
+    back:
+    - N14BoxPlasticFilledMilitaryNCR
+
+- type: playTimeTracker
+  id: NCRNCO

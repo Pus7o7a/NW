@@ -1,0 +1,47 @@
+- type: job
+  id: NCRWS
+  setPreference: true
+  name: job-name-ncr-ws
+  description: job-description-ncr-ws
+  playTimeTracker: NCRWS
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+      - Human
+      - Ghoul
+    - !type:CharacterDepartmentTimeRequirement
+      department: NCR
+      min: 36000 # 10 hours Corvax-Change
+    - !type:CharacterPlaytimeRequirement # Corvax-Add
+      tracker: NCRSoldier
+      min: 18000 # 5 hours
+  startingGear: NCRWSGear
+  icon: "JobIconNcrSpec" # Corvax-Change
+  supervisors: job-supervisors-ncr
+  canBeAntag: false
+  alwaysUseSpawner: true
+  access:
+  - NCR
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - NCR
+
+- type: startingGear
+  id: NCRWSGear
+  equipment:
+    back: N14ClothingBackpackNCR # Corvax-Change
+    jumpsuit: N14ClothingUniformNCRDesert # Corvax-Change
+    shoes: N14ClothingBootsLeatherFilled
+    pocket1: NCRwsloadoutkits
+    id: N14IDNCRDogtagWS
+  innerClothingSkirt: N14ClothingUniformNCRDesert # Corvax-Change
+  satchel: N14ClothingBackpackSatchelNCRFilled
+  storage: # Corvax-Change
+    back:
+    - N14BoxPlasticFilledMilitaryNCR
+
+- type: playTimeTracker
+  id: NCRWS

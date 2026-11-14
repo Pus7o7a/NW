@@ -1,0 +1,45 @@
+- type: job
+  id: TownDoctor
+  setPreference: true
+  name: job-name-towndoctor
+  description: job-description-towndoctor
+  playTimeTracker: TownDoctor
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+      - Human
+      - Ghoul
+    - !type:CharacterDepartmentTimeRequirement
+      department: Townsfolk
+      min: 7200
+  startingGear: TownDoctorGear
+  icon: "JobIconTownMedic" # Corvax-Change
+  supervisors: job-supervisors-townsfolk
+  access:
+  - TownieDoctor
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Townsfolk
+      - type: CPRTraining
+
+- type: startingGear
+  id: TownDoctorGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitWastelandDoc
+    back: N14ClothingBackpackExplorer # Corvax-Change
+    shoes: N14ClothingShoesBlack
+    gloves: N14ClothingHandsGlovesNitrile
+    id: N14IDDoctorTown
+    outerClothing: N14ClothingOuterCoatLab
+  innerClothingSkirt: N14ClothingUniformJumpskirtFalloutBlack
+  satchel: N14ClothingBackpackSatchelWastelanderFilled
+  duffelbag: N14ClothingBackpackDuffelFilled  # N14TODO: Doctors Bag
+  storage: # Corvax-Change
+    back:
+    - N14BoxPlasticFilledWastelander
+
+- type: playTimeTracker
+  id: TownDoctor

@@ -1,0 +1,46 @@
+- type: job
+  id: BoSMidSquire
+  setPreference: true
+  name: job-name-bos-mid-squire
+  description: job-description-bos-mid-squire
+  playTimeTracker: BoSMidSquire
+  requirements:
+    - !type:CharacterLogicOrRequirement
+      requirements:
+        - !type:CharacterSpeciesRequirement
+          species:
+            - Human
+            - Ghoul
+    - !type:CharacterOverallTimeRequirement
+      min: 3600
+  startingGear: BoSMidSquireGear
+  alwaysUseSpawner: true
+  icon: "JobIconBosMSquire" # Corvax-Change
+  supervisors: job-supervisors-bos-mid-initiate
+  canBeAntag: false
+  access:
+  - BoSMidwest
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - BrotherhoodMidwest
+
+- type: startingGear
+  id: BoSMidSquireGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitBOSGreen
+    back: N14ClothingBackpackMilitary # Corvax-Change
+    shoes: N14ClothingBootsCombatFilled
+    head: N14ClothingHeadHatArmyCap
+    outerClothing: N14ClothingOuterMidwestArmor
+    pocket1: NCRBoSMidwestkits
+    id: N14IDBrotherhoodHolotagSquire
+    belt: ClothingBeltMilitary
+  storage: # Corvax-Change
+    back:
+    - N14BoxPlasticFilledMilitary
+
+- type: playTimeTracker
+  id: BoSMidSquire
