@@ -1,0 +1,50 @@
+- type: gameMap
+  id: Sunnyvale
+  mapName: 'Sunnyvale'
+  mapPath: /Maps/N14/sunnyvale2-3.yml
+  minPlayers: 0
+  stations:
+    Sunnyvale:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Sunnyvale'
+        - type: StationJobs
+          overflowJobs:
+            - Wastelander
+          availableJobs:
+            Wastelander: [ -1, -1 ]
+            WastelandScavenger: [ 5, 5 ]
+            WastelandReporter: [ 2, 2 ]
+            WastelandMusician: [ 3, 3 ]
+            WastelandFarmer: [ 3, 3 ]
+            WastelandChaplain: [ 2, 2 ]
+            WastelandBartender: [ 2, 2 ]
+            TribalElder: [ 1, 1 ]
+            Tribal: [ 3, 3 ]
+            TribalFarmer: [ 3, 3 ]
+            TribalHealer: [ 2, 2 ]
+            TownMayor: [ 1, 1 ]
+            TownSheriff: [ 1, 1 ]
+            TownDeputy: [ 1, 1 ]
+            TownDoctor: [ 2, 2 ]
+            TownMechanic: [ 2, 2 ]
+            TownShopkeeper: [ 2, 2 ]
+            Townsperson: [ 3, 3 ]
+            NCROfficer: [ 2, 2 ]
+            NCRNCO: [ 1, 1 ]
+            NCRSoldier: [ 3, 3 ]
+            NCRCadet: [ 3, 3 ]
+            CaravanLeader: [ 1, 1 ]
+            CaravanTrader: [ 2, 2 ]
+            CaravanGuard: [ 3, 3 ]
+            # BoSWashingtonCommander: [ 1, 0 ]
+            # BoSWashingtonCaptain: [ 1, 0 ]
+            # BoSWashingtonResearcher: [ 2, 0 ]
+            # BoSWashingtonSoldier: [ 2, 2 ]
+            # BoSWashingtonRecruit: [ 0, 2 ]
+            # BoSMidPaladinCommander: [ 1, 0 ]
+            # BoSMidPaladin: [ 2, 0 ]
+            # BoSMidKnight: [ 2, 0 ]
+            # BoSMidScribe: [ 2, 0 ]
+            # BoSMidSquire: [ 2, 1 ]
